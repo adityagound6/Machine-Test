@@ -1,0 +1,14 @@
+E:\client\Demo\Machine\Context.Razor\bin\Debug\net6.0\Context.Razor.deps.json
+E:\client\Demo\Machine\Context.Razor\bin\Debug\net6.0\Context.Razor.runtimeconfig.json
+E:\client\Demo\Machine\Context.Razor\bin\Debug\net6.0\Context.Razor.dll
+E:\client\Demo\Machine\Context.Razor\bin\Debug\net6.0\Context.Razor.pdb
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.csproj.AssemblyReference.cache
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.GeneratedMSBuildEditorConfig.editorconfig
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.AssemblyInfoInputs.cache
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.AssemblyInfo.cs
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.csproj.CoreCompileInputs.cache
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.dll
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\refint\Context.Razor.dll
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.pdb
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\Context.Razor.genruntimeconfig.cache
+E:\client\Demo\Machine\Context.Razor\obj\Debug\net6.0\ref\Context.Razor.dll

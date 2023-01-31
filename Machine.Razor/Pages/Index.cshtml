@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="container m-5 p-6">
+
+    <div>
+        <h4>User Task</h4>
+    </div>
+
+<div class="container">
+    <div>
+        <form asp-page-handler="AddTaskManage">
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="col-4">
+                    <input asp-for="TaskVm.AddTask.TaskDesc" class="form-control" />
+                    <label asp-for="TaskVm.AddTask.TaskDesc" class="form-label"></label>
+                    <span asp-validation-for="TaskVm.AddTask.TaskDesc" class="text-danger"></span>
+                </div>
+                <div class="col-3">
+                    <input asp-for="TaskVm.AddTask.TaskExpiryDate" type="date" class="form-control" />
+                    <label asp-for="TaskVm.AddTask.TaskExpiryDate" class="form-label"></label>
+                    <span asp-validation-for="TaskVm.AddTask.TaskExpiryDate" class="text-danger"></span>
+
+                </div>
+                <div class="col-3">
+                    <select asp-for="TaskVm.AddTask.UserId" class="form-select"
+                            asp-items="@(new SelectList(Model.TaskVm.AddTask.Users,"Id","Name"))"></select>
+                    <label asp-for="TaskVm.AddTask.Users" class="form-label"></label>
+                    <span asp-validation-for="TaskVm.AddTask.UserId" class="text-danger"></span>
+                </div>
+                <div class="col-1">
+                    <input asp-for="TaskVm.AddTask.Important" type="checkbox" class="form-check" />
+                    <label asp-for="TaskVm.AddTask.Important" class="form-label"></label>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-outline-primary" value="Submit  " />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Task</th>
+                    <th scope="col">Expiry date</th>
+                    <th scope="col">Users</th>
+                    <th scope="col">Important</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var item in Model.TaskVm.TaskList)
+                    {
+                        <tr>
+                            <td>@item.TaskDesc</td>
+                            <td>@item.TaskExpiryDate</td>
+                            <td>@item.UserId</td>
+                            <td>@item.Important</td>
+                            <td><input type="button" class="btn btn-outline-danger" value="action" /></td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</div>
